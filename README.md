@@ -1,4 +1,4 @@
-# Generate list of exclusions for antivirus software on Exchange 2013/2016 servers
+# Generate list of exclusions for antivirus software on Exchange 2013/2016/2019 servers
 
 These PowerShell scripts generate a list of file, folder, process file extension exclusions for configuring antivirus software that will be running on an Exchange 2013 or Exchange 2016 servers. The correct exclusions are recommended to prevent antivirus software from interfering with the operation of Exchange Server.
 
