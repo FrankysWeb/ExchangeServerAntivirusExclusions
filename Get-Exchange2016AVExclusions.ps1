@@ -198,13 +198,6 @@ if ($IsMailbox) {
 
     "$($env:SystemDrive)\inetpub\temp\IIS Temporary Compressed Files" | Out-File $outputfile_paths -Append
 
-    "$($env:SystemRoot)\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files" | Out-File $outputfile_paths -Append
-
-
-    #IIS System Files
-
-    "$($env:SystemRoot)\System32\Inetsrv" | Out-File $outputfile_paths -Append
-
 }
 
 ### Edge Transport Servers ###
@@ -342,7 +335,6 @@ if ($IsMailbox) {
     "$($exinstall)Bin\UmService.exe" | Out-File $outputfile_procs -Append
     "$($exinstall)Bin\UmWorkerProcess.exe" | Out-File $outputfile_procs -Append
     "$($exinstall)FIP-FS\Bin\UpdateService.exe" | Out-File $outputfile_procs -Append
-    "$($env:SystemRoot)\System32\inetsrv\W3wp.exe" | Out-File $outputfile_procs -Append
     "$($exinstall)Bin\wsbexchange.exe" | Out-File $outputfile_procs -Append
 }
 
@@ -363,8 +355,6 @@ if ($IsMailbox -or $IsEdge) {
     "$($exinstall)Bin\MSExchangeHMWorker.exe" | Out-File $outputfile_procs -Append
     "$($exinstall)Bin\MSExchangeTransport.exe" | Out-File $outputfile_procs -Append
     "$($exinstall)Bin\MSExchangeTransportLogSearch.exe" | Out-File $outputfile_procs -Append
-    "$($env:SystemRoot)\System32\WindowsPowerShell\v1.0\Powershell.exe" | Out-File $outputfile_procs -Append
-
 }
 
 

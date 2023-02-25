@@ -127,10 +127,6 @@ foreach ($name in $names) {$serverlogs.($name.Name).PathName | Out-File $outputf
 
 "$($exinstall)ClientAccess\OAB" | Out-File $outputfile_paths -Append
 
-#IIS System Files
-
-"$($env:SystemRoot)\System32\Inetsrv" | Out-File $outputfile_paths -Append
-
 #Cluster
 
 "$($env:windir)\Cluster" | Out-File $outputfile_paths -Append
@@ -307,14 +303,12 @@ foreach ($name in $names) {$fetransport.($name.Name).PathName | Out-File $output
 "$($exinstall)Bin\Search\Ceres\Runtime\1.0\Noderunner.exe" | Out-File $outputfile_procs -Append
 "$($exinstall)Bin\OleConverter.exe" | Out-File $outputfile_procs -Append
 "$($exinstall)Bin\Search\Ceres\ParserServer\ParserServer.exe" | Out-File $outputfile_procs -Append
-"$($env:SystemRoot)\System32\WindowsPowerShell\v1.0\Powershell.exe" | Out-File $outputfile_procs -Append
 "$($exinstall)FIP-FS\Bin\ScanEngineTest.exe" | Out-File $outputfile_procs -Append
 "$($exinstall)FIP-FS\Bin\ScanningProcess.exe" | Out-File $outputfile_procs -Append
 "$($exinstall)ClientAccess\Owa\Bin\DocumentViewing\TranscodingService.exe" | Out-File $outputfile_procs -Append
 "$($exinstall)Bin\UmService.exe" | Out-File $outputfile_procs -Append
 "$($exinstall)Bin\UmWorkerProcess.exe" | Out-File $outputfile_procs -Append
 "$($exinstall)FIP-FS\Bin\UpdateService.exe" | Out-File $outputfile_procs -Append
-"$($env:SystemRoot)\System32\inetsrv\W3wp.exe" | Out-File $outputfile_procs -Append
 
 
 ### File Extension Exclusions ###
