@@ -6,6 +6,7 @@ The scripts are based on information published by Microsoft:
 
 - [Exchange Server 2013 antivirus exclusions](https://technet.microsoft.com/en-us/library/bb332342(v=exchg.150).aspx)
 - [Exchange Server 2016 antivirus exclusions](https://technet.microsoft.com/en-us/library/bb332342(v=exchg.160).aspx)
+- [Exchange Server 2019 antivirus exclusions](https://learn.microsoft.com/en-us/Exchange/antispam-and-antimalware/windows-antivirus-software?redirectedfrom=MSDN&view=exchserver-2019)
 
 Use the scripts to generate the exclusion list based on a single server. You can then apply the same exclusions to all servers that have the same configuration. If your antivirus software has a policy-based administration console then that can make the configuration of multiple servers more efficient.
 
@@ -13,7 +14,7 @@ Use the scripts to generate the exclusion list based on a single server. You can
 
 ## Download
 
-You can download the scripts from the [TechNet Script Gallery](https://gallery.technet.microsoft.com/office/Generate-Antivirus-f1a9a59e), or from [Github](https://github.com/cunninghamp/ExchangeServerAntivirusExclusions/releases).
+You can download the scripts from the [Github](https://github.com/FrankysWeb/ExchangeServerAntivirusExclusions).
 
 ## Usage
 
@@ -29,7 +30,7 @@ For Exchange 2016 servers:
 .\Get-Exchange2016AVExclusions.ps1
 ```
 
-For Exchange 2016 servers running on Windows Server 2016:
+For Exchange 2016 servers running on Windows Server 2016 (and Exchange Server 2019):
 
 ```
 .\Get-Exchange2016AVExclusions.ps1 -ConfigureWindowsDefender
@@ -39,6 +40,7 @@ Results are output to text files, which you can import or manually enter in your
 
 ## Credits
 Written by: Paul Cunningham
+Modified by: Frank Zoechling (Original script was archived and readonly)
 
 Find me on:
 
@@ -52,3 +54,4 @@ Check out my [books](https://paulcunningham.me/books/) and [courses](https://pau
 Additional credit:
 
 * Matt K (via [blog comment](http://exchangeserverpro.com/powershell-script-exchange-2013-antivirus-exclusions/#comment-244497))
+* Frank Zoechling [FrankysWeb](https://www.frankysweb.de)
