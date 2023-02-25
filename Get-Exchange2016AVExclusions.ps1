@@ -10,6 +10,7 @@ the operation of Exchange.
 
 This script is based on information published by Microsoft here:
 https://technet.microsoft.com/en-us/library/bb332342(v=exchg.160).aspx
+https://techcommunity.microsoft.com/t5/exchange-team-blog/update-on-the-exchange-server-antivirus-exclusions/ba-p/3751464
 
 Use this script to generate the exclusion list based on a single server. You can then
 apply the same exclusions to all servers that have the same configuration. If your antivirus
@@ -27,6 +28,7 @@ Results are output to text files.
 
 .NOTES
 Written by: Paul Cunningham
+Modified by: Frank Zoechling
 
 Find me on:
 
@@ -41,6 +43,7 @@ Additional credit:
 
 Change Log:
 V1.00, 05/05/2016 - Initial version
+V1.01, 02/25/23 - Modified exclusions to new best practise (https://techcommunity.microsoft.com/t5/exchange-team-blog/update-on-the-exchange-server-antivirus-exclusions/ba-p/3751464)
 
 License:
 
