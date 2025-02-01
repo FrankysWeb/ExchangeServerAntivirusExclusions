@@ -30,12 +30,17 @@ For Exchange 2016 servers:
 .\Get-Exchange2016AVExclusions.ps1
 ```
 
-For Exchange 2016 servers running on Windows Server 2016 (and Exchange Server 2019):
+For Exchange 2016 servers running on Windows Server 2016:
 
 ```
 .\Get-Exchange2016AVExclusions.ps1 -ConfigureWindowsDefender
 ```
 
+For Exchange 2019 servers running on Windows Server 2022/2025:
+
+```
+.\Get-Exchange2019AVExclusions.ps1 -ConfigureWindowsDefender
+```
 Results are output to text files, which you can import or manually enter in your antivirus configuration.
 
 ## Credits
