@@ -41,6 +41,12 @@ For Exchange 2019 servers running on Windows Server 2022/2025:
 ```
 .\Get-Exchange2019AVExclusions.ps1 -ConfigureWindowsDefender
 ```
+
+For Exchange SE servers running on Windows Server 2022/2025:
+
+```
+.\Get-ExchangeSEAVExclusions.ps1 -ConfigureWindowsDefender
+```
 Results are output to text files, which you can import or manually enter in your antivirus configuration.
 
 ## Credits
